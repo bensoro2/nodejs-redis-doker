@@ -1,0 +1,8 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - REDIS_URL=redis://default:b36d7f5bb0aaa3f7a0ed@139.162.55.25:6379/0
